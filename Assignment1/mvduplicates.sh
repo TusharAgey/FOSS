@@ -7,9 +7,9 @@ fi
 i=0
 src=$1 #the folder to be scanned for duplicates,
 dest=$2 #the folder to store duplicates.
-if [ -d $src ] && [ -d $dest ]
+if [ -d "$src" ]
 then
-	fdupes -fr $src > /tmp/thisisthetestfile #these are duplicate files
+	fdupes -fr "$src" > /tmp/thisisthetestfile #these are duplicate files
 	flen=$(cat /tmp/thisisthetestfile | wc -l)
 	for (( i=1; i<$flen; i++ ))
 	do
