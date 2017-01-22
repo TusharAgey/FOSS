@@ -24,3 +24,4 @@ then
 else
 	echo "The source or destination directory does not exist."
 fi
+rm /tmp/thisisthetestfile
